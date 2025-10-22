@@ -1,0 +1,13 @@
+/* Styles for Contact page */
+.contact-page { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+#contactForm { max-width: 800px; margin: 0 auto; }
+#contactForm .form-label { font-weight: 600; color: #343a40; }
+#contactForm .form-control { border-radius: 8px; box-shadow: none; border: 1px solid #dee2e6; }
+#contactForm textarea.form-control { min-height: 140px; resize: vertical; }
+
+#contactForm .btn-primary { border-radius: 999px; padding: 0.5rem 1.25rem; }
+
+@media (max-width: 767px) {
+  #contactForm { padding: 0 0.75rem; }
+}

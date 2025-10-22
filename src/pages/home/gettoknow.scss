@@ -1,0 +1,24 @@
+/* Styles specific to the GetToKnow carousel */
+.gtok-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+.gtok-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform 300ms ease;
+  will-change: transform;
+}
+.gtok-slide {
+  flex: 0 0 auto;
+  min-width: 260px;
+}
+
+.gtok-controls { display: flex; align-items: center; }
+
+@media (min-width: 992px) {
+  /* Desktop: show 5 slides across. Calculate widths so five cards + gaps fit nicely. */
+  .gtok-track { gap: 1rem; }
+  /* total gaps = 4 * 1rem; available width for slides = 100% - gaps; each slide gets 1/5 of that */
+  .gtok-slide { width: calc((100% - 4rem) / 5); }
+}

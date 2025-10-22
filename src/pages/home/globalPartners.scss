@@ -1,0 +1,28 @@
+/* Styles specific to the Global Partners carousel */
+.gp-carousel {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* side padding creates space so adjacent slides can peek into the viewport */
+  padding: 0 10%;
+}
+.gp-track { display: flex; gap: 1rem; will-change: transform }
+.gp-slide { flex: 0 0 auto; }
+
+@media (min-width: 992px) {
+  /* Center 3 slides in the visible area (80% after 10% padding each side), leaving ~10% peek on each side
+     Calculate available width: 100% - 20% (left+right padding) - total gaps (2 * 1rem)
+     Divide that by 3 to get each slide width. */
+  .gp-slide { width: calc((100% - 20% - 2rem) / 3); }
+}
+
+@media (max-width: 991px) {
+  /* two-per-row with smaller side padding */
+  .gp-carousel { padding: 0 6%; }
+  .gp-slide { width: calc((100% - 12% - 1rem) / 2); }
+}
+
+@media (max-width: 767px) {
+  .gp-carousel { padding: 0 4%; }
+  .gp-slide { width: 100%; }
+}

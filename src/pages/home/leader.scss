@@ -1,0 +1,20 @@
+/* Styles specific to the Leader section */
+.leader-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+.leader-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform 300ms ease;
+  will-change: transform;
+}
+.leader-slide {
+  flex: 0 0 auto;
+  min-width: 300px;
+}
+
+/* Desktop tweaks for leader layout */
+@media (min-width: 992px) {
+  .leader-slide { min-width: calc((100% / 3) - 1rem); }
+}

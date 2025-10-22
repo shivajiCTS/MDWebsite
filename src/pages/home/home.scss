@@ -1,0 +1,26 @@
+/* Styles for home page sections */
+.home-sections {
+  display: block;
+}
+
+.home-section {
+  height:100vh
+}
+
+.home-section.bg-light {
+  background-color: #f8f9fa;
+}
+
+/* Portfolio carousel styles moved to src/pages/home/portfolio.scss */
+
+/* Mobile: single slide view */
+@media (max-width: 767px) {
+  .portfolio-track { gap: 0; }
+  .portfolio-slide { min-width: 100%; }
+}
+
+/* GetToKnow carousel styles moved to src/pages/home/gettoknow.scss */
+
+/* Global Partners styles moved to src/pages/home/globalPartners.scss */
+
+/* Leader section styles moved to src/pages/home/leader.scss */

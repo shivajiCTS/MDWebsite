@@ -1,0 +1,83 @@
+/* Styles for the About page */
+.about-page { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+.about-row-1 .about-text { text-align: left; }
+.about-row-1 .about-text h2 { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.about-row-1 .about-text .lead { color: #495057; max-width: 48rem; }
+
+.about-image img { max-height: 360px; object-fit: cover; }
+
+.about-row-2 .quote-wrap { margin-top: 2rem; }
+.about-row-2 .blockquote {
+  background: linear-gradient(180deg, #ffffff, #f8f9fa);
+  border-left: 6px solid #646cff;
+  display: inline-block;
+  max-width: 900px;
+  width: calc(100% - 2rem);
+  border-radius: 8px;
+}
+.about-row-2 .blockquote p { font-size: 1.125rem; line-height: 1.6; color: #333; }
+
+@media (max-width: 767px) {
+  .about-row-1 .about-text { text-align: center; }
+  .about-row-1 .about-image { margin-top: 1.25rem; }
+  .about-row-2 .blockquote { width: 100%; }
+}
+
+/* Styles for the third section (Mission / Vision / Values) */
+.about-row-3 { padding-top: 1.5rem; }
+.about-row-3 .section-heading { font-size: 1.75rem; margin-bottom: 0.25rem; }
+.about-row-3 .section-sub { color: #6c757d; margin-bottom: 1.25rem; }
+.about-row-3 .pillar { background: #fff; border-radius: 8px; box-shadow: 0 6px 12px rgba(20,20,20,0.05); min-height: 160px; }
+.about-row-3 .pillar h5 { margin-bottom: 0.5rem; }
+.about-row-3 .pillar p { color: #495057; }
+
+@media (max-width: 767px) {
+  .about-row-3 .pillar { margin-bottom: 1rem; }
+}
+
+/* Pillar specific layout (full-width blocks) */
+.pillar-year {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #646cff;
+}
+.pillar-body { gap: 0rem; }
+.pillar-left { text-align: left; }
+.pillar-divider {
+  width: 2px;
+  background: linear-gradient(180deg,#e9ecef,#ced4da);
+  height: 60px;
+}
+.img-placeholder {
+  background: #f1f3f5;
+  height: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  width: 100%;
+}
+.pillar-divider::after{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: red;
+    
+}
+@media (max-width: 767px) {
+  .pillar-left { text-align: center; }
+  .img-placeholder { height: 160px; }
+}
+@media (min-width: 320px) {
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.66666667% !important;
+    }
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+        justify-items: center;
+    }
+}

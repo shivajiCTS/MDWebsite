@@ -1,0 +1,17 @@
+/* Styles for In the Media page */
+.media-page { padding-top: 2.25rem; padding-bottom: 2.25rem; }
+.media-card { background: #fff; border-radius: 8px; box-shadow: 0 6px 14px rgba(16,16,16,0.06); }
+.media-thumb { width: 160px; height: 110px; object-fit: cover; border-radius: 6px; }
+.media-thumb-sm { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; }
+.teaser-thumb { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; }
+.paper-name { font-weight: 600; color: #6c757d; }
+.media-headline { font-size: 1.2rem; margin: 0.25rem 0; }
+.media-headline-sm { font-weight: 600; }
+.reporter { font-size: 0.85rem; }
+
+.stacked-stories .media-card { display: flex; align-items: center; }
+
+@media (max-width: 767px) {
+  .media-thumb { width: 120px; height: 84px; }
+  .media-card { text-align: left; }
+}
