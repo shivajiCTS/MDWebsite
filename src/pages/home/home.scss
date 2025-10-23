@@ -19,8 +19,8 @@
   .portfolio-slide { min-width: 100%; }
 }
 
-/* GetToKnow carousel styles moved to src/pages/home/gettoknow.scss */
-
-/* Global Partners styles moved to src/pages/home/globalPartners.scss */
-
-/* Leader section styles moved to src/pages/home/leader.scss */
+/* Page-level styles */
+@import './globalPartners.scss';
+@import './portfolio.scss';
+@import './leader.scss';
+@import './gettoknow.scss';

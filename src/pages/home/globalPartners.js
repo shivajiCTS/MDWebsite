@@ -1,8 +1,7 @@
 export function renderGlobalPartners(container) {
-  const section = document.createElement('section')
-  section.id = 'global-partners'
-  section.className = 'home-section d-flex justify-content-center flex-column align-items-center bg-light'
+  const section = document.createElement('div')
   section.innerHTML = `
+  <section id="global-partners" class="home-section d-flex justify-content-center flex-column align-items-center bg-light">
     <div class="container-fluid p-0">
       <div class="d-flex w-100 align-items-start justify-content-between mb-3">
         <div>
@@ -20,6 +19,7 @@ export function renderGlobalPartners(container) {
         </div>
       </div>
     </div>
+    </section>
   `
 
   container.appendChild(section)

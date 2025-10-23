@@ -1,4 +1,9 @@
+import { initNavbar, setActiveNav } from '../components/navbar.js'
+import { initFooter } from '../components/footer.js'
 export function renderMedia() {
+   document.querySelector('#app').innerHTML = `
+  <div id="page-root"></div>
+`
   const root = document.getElementById('page-root')
   root.innerHTML = `
     <div class="container-fluid py-5 media-page">
@@ -73,3 +78,7 @@ export function renderMedia() {
     </div>
   `
 }
+renderMedia()
+initNavbar()
+setActiveNav('media')
+initFooter()

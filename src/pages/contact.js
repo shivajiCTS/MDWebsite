@@ -1,4 +1,9 @@
+import { initNavbar, setActiveNav } from '../components/navbar.js'
+import { initFooter } from '../components/footer.js'
 export function renderContact() {
+  document.querySelector('#app').innerHTML = `
+  <div id="page-root"></div>
+`
   const root = document.getElementById('page-root')
   root.innerHTML = `
     <div class="container-fluid  py-5">
@@ -29,3 +34,7 @@ export function renderContact() {
     form.reset()
   })
 }
+renderContact()
+initNavbar()
+setActiveNav('contact')
+initFooter()
