@@ -1,4 +1,9 @@
+import { initNavbar, setActiveNav } from '../components/navbar.js'
+import { initFooter } from '../components/footer.js'
 export function renderAbout() {
+  document.querySelector('#app').innerHTML = `
+  <div id="page-root"></div>
+`
   const root = document.getElementById('page-root')
   root.innerHTML = `
     <div class="container-fluid py-5 about-page">
@@ -84,3 +89,7 @@ export function renderAbout() {
     </div>
   `
 }
+renderAbout()
+initNavbar()
+setActiveNav('about')
+initFooter()
