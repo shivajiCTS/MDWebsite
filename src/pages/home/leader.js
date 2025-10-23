@@ -1,8 +1,7 @@
 export function renderLeader(container) {
-  const section = document.createElement('section')
-  section.id = 'leader'
-  section.className = 'home-section d-flex justify-content-center flex-column align-items-center text-center bg-light'
+  const section = document.createElement('div');
   section.innerHTML = `
+  <section id="leader" class="home-section d-flex justify-content-center flex-column align-items-center bg-light py-5">
     <div class="container">
       <div id="leaderCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -89,11 +88,13 @@ export function renderLeader(container) {
         </button>
       </div>
     </div>
+    </section>
   `
 
   container.appendChild(section)
 
   // Sync dot active classes on slide change (custom dots inside left column)
+  
   const carouselEl = section.querySelector('#leaderCarousel')
   if (carouselEl) {
     const items = carouselEl.querySelectorAll('.carousel-item')

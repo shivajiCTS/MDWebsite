@@ -1,8 +1,7 @@
 export function renderGetToKnow(container) {
-  const section = document.createElement('section')
-  section.id = 'get-to-know'
-  section.className = 'home-section d-flex justify-content-center flex-column align-items-center bg-light'
-  section.innerHTML = `
+  const section = document.createElement('div')
+ section.innerHTML = `
+ <section id="get-to-know" class="home-section d-flex justify-content-center flex-column align-items-center">
     <div class="container-fluid p-0">
       <div class="d-flex w-100 align-items-start justify-content-between mb-3">
         <div>
@@ -21,6 +20,7 @@ export function renderGetToKnow(container) {
         </div>
       </div>
     </div>
+    </section>
   `
   container.appendChild(section)
 
